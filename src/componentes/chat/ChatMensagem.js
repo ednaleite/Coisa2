@@ -31,11 +31,25 @@ class ChatMensagem extends Component{
         }
 
         if(b.value != ""){
-        this.props.enviaTexto(mensagem)
-        this.props.conversaWatson(mensagem, contexto)
-        b.value = ''
+            // if(localStorage.getItem('opcao1')){
+            //     this.props.enviaTexto(localStorage.getItem('opcao1') + "proximo" + mensagem)
+            //     this.props.conversaWatson(localStorage.getItem('opcao1') + "proximo" + mensagem, contexto)
+            //     var a = localStorage.getItem('opcao1') + "proximo" + b.value;
+            //     b.value = ''
+            //     alert(a);
+            // }else{
+                this.props.enviaTexto(mensagem)
+                this.props.conversaWatson(mensagem, contexto)
+                // if(b.value == '2'){
+                //     localStorage.setItem('opcao1', b.value);   
+                // }
+                // b.value = ''
+                // alert('Eu não entendi foi nada meu filho');
+            }
+
+            
           }
-     }
+     
    
 
     

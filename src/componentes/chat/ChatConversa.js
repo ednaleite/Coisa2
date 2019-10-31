@@ -10,74 +10,71 @@ class ChatConversa extends Component{
   
    renderMensagem(msg,k){
     
-    // if(msg.texto.substr(0,3) == "Por"){
-        // if(!localStorage.getItem('contadorV')){
-        //     localStorage.setItem('contadorV', 1);
-        // }
-        
-        // switch(localStorage.getItem('contadorV')){
-        //     case '1': 
-        //             var textto = 'Seu nome';
-        //             localStorage.setItem('contadorV', 2);
-        //             break;
-        //     case '2': 
-        //             var textto = 'Seu CPF';
-        //             break;
-        //     default:
-        //             var textto = 'Eu odeio minha vida';
-        //             break;
-        // }
-        
-    //     return (
+    if(msg.texto.substr(0,3) == "Dig"){
+        return (
                         
-    //         <div key = {k}>
+            <div key = {k}>
         
-    //     {
-    //         msg.origem === "user" && <span>
+        {
+            msg.origem === "user" && <span>
               
-    //         <div className='usuario'>
+           
+            
+            <div className='usuario'>
           
-    //         <div id='textouc'>
-    //                 <Alert color='info' id='teste'>{msg.texto}</Alert>
-    //         </div>
+            <div id='textouc'>
+                    <Alert color='info' id='teste'>{msg.texto}</Alert>
+            </div>
 
-    //             <div>
-    //                 <img src='images/duvidas.png' id='userconversa'/>
-    //             </div>
+                <div>
+                    <img src='images/duvidas.png' id='userconversa'/>
+                </div>
+           
             
-    //     </div>
+        </div>
             
-    //     </span>
+        </span>
         
-    //     }
+        }
 
-    //     {
-    //         msg.origem === "bot" && <span>
-    //             <div className='iracema' id='fazendolink'>
-    //                 <div>
-    //                     <img src='images/iracema.jpg' id='botconversa'/>
-    //                 </div>
+        {
+            msg.origem === "bot" && <span>
+                <div className='iracema' id='fazendolink'>
+                    <div>
+                        <img src='images/iracema.jpg' id='botconversa'/>
+                    </div>
                     
-    //                 <div id='textobc'>
-    //                     <Alert color='dark' id='teste4'><span>{msg.texto}</span>
-    //                     <br/><br/>
-    //                     {textto}
-    //                     </Alert>
-    //                 </div>
-    //             </div>
-    //         </span>
-    //     }
+                    <div id='textobc'>
+                        <Alert color='dark' id='teste4'><span>{msg.texto}</span>
+                        <br/><br/>
+                            1 - Alteração/Inclusão de dependentes<br/>
+                            2 - Negociação de Débitos<br/>
+                            3 - Mudança de Plano ou de Titularidade<br/>
+                            4 - Exclusão de serviços<br/>
+                            5 - Emissão de carnês/boletos<br/>
+                            6 - Aluguel ou venda de materiais hospitalares<br/>
+                        </Alert>
+               
+                    </div>
+                
+                </div>
+            </span>
+        }
         
-    //         </div>
+            </div>
 
 
-    // )
-    // } 
+    )
+
+    }
+
+    
+
     var MensagemWhats = "Olá, gostaria de saber sobre o atendimento póstumo";
     localStorage.setItem('MensagemWhats', "https://wa.me/85989269491/?text=" + MensagemWhats.replace(/ /gi,'%20'));
 
 
-     if(msg.texto.substr(0,3) == "Ate"){
+     if(msg.texto.substr(0,3) == "Olá"){
         return (
                         
             <div key = {k}>
@@ -127,7 +124,7 @@ class ChatConversa extends Component{
     }
 
 
-    if(msg.texto.substr(0,3) == "Olá"){
+    if(msg.texto.substr(0,3) == "Ate"){
         return (
                         
             <div key = {k}>

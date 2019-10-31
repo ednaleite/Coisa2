@@ -4,7 +4,7 @@ import ChatMensagem from './chat/ChatMensagem';
 import ChatConversa from './chat/ChatConversa';
 import './chat/chat.css';
 import ScrollToBottom from 'react-scroll-to-bottom';
-import { css } from 'glamor';
+
 
 
 class Chatbot extends Component{
